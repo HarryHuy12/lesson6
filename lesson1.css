@@ -1,0 +1,43 @@
+/* .container
+{
+    display : grid; */
+    /* Chủ yếu sử dụng auto để canh chỉnh giữa các cột, chỉ dùng số khi cần thiết. */
+    /* grid-template-columns: auto auto auto; */
+    /* khoảng cách giữa các cột */
+    /* grid-column-gap: 30px;  */
+    /* khoảng cách giữa các hàng */
+    /* grid-row-gap: 30px;  */
+    /* 50px : cách cột 30px : cách hàng */
+    /* grid-gap : 50px 30px; */
+/* }  */
+/* .item{
+    background-color: brown;
+    border : 1px solid;
+    padding : 10px;
+    text-align : center;
+} */
+ /* sắp xếp các phàn tử trong grid theo thứ tự */
+.container{
+    display: grid;
+    grid-template-areas: 
+    "footer footer"
+    "header body";
+}
+.item{
+    text-align: center;
+    font-size: 30px;
+    padding : 10px;
+    border : 1px solid;
+}
+.header{
+    grid-area : header;
+    background-color: blueviolet;
+}
+.body{
+    grid-area : body;
+    background-color: green;
+}
+.footer{
+    grid-area : footer;
+    background-color: orange;
+}
